@@ -1,0 +1,108 @@
+{% load static %} 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+   body {
+      margin: 0;
+      padding: 0;
+      font-family: Georgia, serif;
+      background-image: url('https://www.fcionline.com/wp-content/uploads/2023/05/GettyImages-1292946572-763x505.webp');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+form {
+  background-color: rgba(59, 59, 59, 0.9); /* Transparent background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  width: 320px;
+}
+
+h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+}
+
+label {
+  color: azure;
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  background-color: #fff; /* White background */
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+p {
+  color: aliceblue;
+  text-align: center;
+}
+
+a {
+  color: rgb(158, 158, 228);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+</style>
+  <title>Signup Page</title>
+</head>
+
+<body>
+  <form action="" method="post">
+    {% csrf_token %} 
+    
+    <h2>Sign Up</h2>
+    
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="username" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password1" name="password1" required>
+
+    <label for="confirm-password">Confirm Password:</label>
+    <input type="password" id="password2" name="password2" required>
+
+    <button type="submit">Sign Up</button>
+    <p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
+  </form>
+</body>
+</html>

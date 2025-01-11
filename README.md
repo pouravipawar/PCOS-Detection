@@ -4,6 +4,13 @@ an extensive compilation of clinical, hormonal, and lifestyle factors linked to 
 
 **Keywords** — Polycystic Ovary Syndrome (PCOS), Early detection, Machine learning, Feature selection, PCOS detection, Hormonal and lifestyle factors
 
+## Note on Code Availability
+
+This repository contains the HTML and CSS files used in the frontend development of the PCOS detection project. The core logic and machine learning model code have been withheld from public access to maintain confidentiality and protect the proprietary work involved in this research.
+
+If you have any inquiries or require additional information about the project, please feel free to contact me directly. I am happy to discuss the methodology and findings within appropriate boundaries.
+
+
 # Output
 
 ![Screenshot 2025-01-06 235812](https://github.com/user-attachments/assets/fded6168-1d8e-40c7-9060-386366226e99)
